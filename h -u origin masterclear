@@ -1,0 +1,17 @@
+http.sslcainfo=D:/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+credential.helper=manager
+user.name=Gennadiy
+user.email=magnit_gena@mail.ru
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/Germil74/layout-template-clean.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*

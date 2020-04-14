@@ -1,0 +1,13 @@
+@import 'utils/fonts.scss';
+@import 'utils/vars.scss';
+@import 'utils/mixins.scss';
+@import 'libs.scss';
+@import 'utils/functions.scss';
+
+
+//Модули
+@import "modules/modules.scss";
+
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/home/home.scss';
