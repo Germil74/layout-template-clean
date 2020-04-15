@@ -1,0 +1,3 @@
+npm install bootstrap
+npm install jquery
+заголовок ответа  в недарах прописать response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");

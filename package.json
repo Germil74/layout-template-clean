@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -36,6 +36,8 @@
     "handlebars": "^4.7.6"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^7.0.0",
     "svg4everybody": "^2.1.8"
   }
