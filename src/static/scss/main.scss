@@ -10,5 +10,9 @@
 //@import "modules/modules.scss";
 
 // СТРАНИЦЫ
+//@import 'template.scss';  // template начальный щаблон с темлате layout
+@import 'templateParallax.scss';  // template начальный щаблон с темлате layout
+//@import 'pages/home/home.scss';
+
 // Главная страница
 //@import 'pages/home/home.scss';

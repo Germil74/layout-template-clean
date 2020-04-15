@@ -9,5 +9,10 @@ module.exports = function(){
     $.handlebars.registerHelper('encodeURI', function(str){
         return encodeURIComponent(str)
     })
+    $.handlebars.registerHelper('icon', function (name, mod) {
+        var mod = typeof mod === "object" ? '' : mod
+        return new $.handlebars.SafeString(`<svg class="icon icon-${name} ${mod}"><use xlink:href="static/img/svg/symbol/sprite.svg#${name}"></use></svg>`);
+    })
+
 }
 

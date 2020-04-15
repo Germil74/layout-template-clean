@@ -36,8 +36,7 @@
     "handlebars": "^4.7.6"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0",
+    "materialize-css": "^1.0.0-rc.2",
     "normalize.css": "^7.0.0",
     "svg4everybody": "^2.1.8"
   }
