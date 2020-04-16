@@ -1,4 +1,200 @@
 <div class="container">
-    <h1>Header</h1>
+    <h1 class="center">Header</h1>
+
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Section 1</h5>
+        <p>Stuff</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Section 2</h5>
+        <p>Stuff</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Section 3</h5>
+        <p>Stuff</p>
+    </div>
+
+
+    <div class="my-block valign-wrapper teal">
+        <h5>This should be vertically aligned</h5>
+    </div>
+
+    <div class="yellow my-block">
+        <div class="left pink">...</div>
+        <div class="right teal">...</div>
+
+        <h4 class="truncate">This is an extremely long title that will be truncated Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi culpa fuga ipsa ipsam ipsum laudantium odio perferendis placeat. Aspernatur delectus doloremque libero pariatur, provident sed velit. Aut culpa dignissimos dolorem dolores ipsam quas quibusdam quo similique suscipit voluptate. Adipisci atque culpa cupiditate eligendi et ipsa laudantium necessitatibus quae, ratione.</h4>
+    </div>
+
+    <div class="card-panel hoverable"> Hoverable Card Panel</div>
+
+    <div class="card-panel">
+        <img src="static/img/general/img_cat123.jpg" alt="" class="responseive-img circle" style="max-width: 100px">
+    </div>
+
+
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+                <div class="col s2">
+                    <img src="static/img/general/img_cat123.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  видео -->
+
+<div class="row pink">
+    <div class="col s12 m8 l6 offset-m2 offset-l3">
+        <div class="video-container">
+            <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 
+
+    <!--  видео -->
+    {{icon 'ccnb'}}
+    <!--  пульсирующие иконки -->
+    <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
+    <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+    <a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
+   <a class="my-circle circle pink pulse" onclick="alert('позвонил')">{{icon 'ccnb'}}</a>
+
+    <div class="my-circle circle pink pulse ">{{icon 'ccnb' 'center-align'}}</div>
+
+    <div class="my-circle circle pink pulss ">{{icon 'ccnb' 'center-align'}}</div>
+    <!--  пульсирующие иконки -->
+    <!--  тень -->
+    <div class="row">
+        <div class="col s12 m4 l2">
+            <p class="z-depth-0  shadow-demo">z-depth-0  none</p>
+        </div>
+        <div class="col s12 m4 l2">
+            <p class="z-depth-1 shadow-demo">z-depth-1</p>
+        </div>
+        <div class="col s12 m4 l2">
+            <p class="z-depth-2 shadow-demo">z-depth-2</p>
+        </div>
+        <div class="col s12 m4 l2">
+            <p class="z-depth-3 shadow-demo">z-depth-3</p>
+        </div>
+        <div class="col s12 m4 l2">
+            <p class="z-depth-4 shadow-demo">z-depth-4</p>
+        </div>
+        <div class="col s12 m4 l2">
+            <p class="z-depth-5 shadow-demo">z-depth-5</p>
+        </div>
+    </div>
+    <!-- тень  -->
+<!-- костомная кнопка  -->
+    <button class="btn-my">кнопка</button>
+
+
+
+
+
+
+
+
+    <!-- костомная кнопка  -->
+<div class="section">
+    <button class="btn-my" onclick="document.querySelector('#scale-demo').className === 'scale-out' ? document.querySelector('#scale-demo').style.display = 'none': document.querySelector('#scale-demo').style.display = 'block'">кнопка</button>
+</div>
+    <!-- таблицы -->
+
+    <table class=" section responsive-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Item Price</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+        </tr>
+        <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    <!-- таблицы -->
+
+<!--cкрывание и показ элемента css эфект-->
+    <!-- Scaled in -->
+
+    <div class="section">
+        <a id="scale-demo" href="#!" class="btn-floating btn-large scale-transition scale-out scale-in" onclick="this.style = 'display: none;'">
+            <i class="material-icons">add</i>
+        </a>
+
+        <!-- Scaled out -->
+<!--        <a id="scale-demo2" href="#!" class="btn-floating btn-large scale-transition scale-out" onclick="this.style = 'display: block;'">
+            <i class="material-icons">add</i>
+        </a>-->
+
+
+    </div>
+
+
+
+    <!--cкрывание и показ элемента css эфект-->
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

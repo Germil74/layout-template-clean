@@ -1,0 +1,93 @@
+ section
+
+ <div class="divider"></div>   черта
+
+
+
+вырвниваний
+valign-wrapper    вертикальное  задаётся родителю
+.left-align, .right-alignи .center-align:   Эти классы предназначены для выравнивания по горизонтали содержания задаётся елементу который нужно выравнить
+.left
+.right       float: right
+
+Скрытие / отображение контента
+Мы предоставляем простые в использовании классы для скрытия / отображения контента на экранах определенного размера.
+
+Класс	Диапазон экрана
+.hide	Скрыто для всех устройств
+.hide-on-small-only	Скрыто только для мобильных
+.hide-on-med-only	Скрыто только для планшета
+.hide-on-med-and-down	Скрыто для планшета и ниже
+.hide-on-med-and-up	Скрыто для планшета и выше
+.hide-on-large-only	Скрыто только для рабочего стола
+.show-on-small	Показать только для мобильных
+.show-on-medium	Показать только для планшета
+.show-on-large	Показать только для рабочего стола
+.show-on-medium-and-up	Шоу для планшета и выше
+.show-on-medium-and-down	Показать для планшета и ниже
+
+truncate     обрезка текста в одну строку
+hoverable    тень при наведении может работать с разными элементами (основное карточка)
+.browser-default  возвращает браузерные настройки
+
+*************************** картинка  *****************************************
+responseive-img     адоптивная картинка (max-width: 100% and height:auto.)
+circle               круглая
+*************************** видео  *****************************************
+video-container       внутри  iframe    c заданными размерами например width="853" height="480"
+
+responsive-video    адоптивное видео (max-width: 100% and height:auto.)
+
+
+*************************** пульсирующие иконки  *****************************************
+
+<a class="my-circle circle pink pulse" onclick="alert('позвонил')">{{icon 'ccnb'}}</a>
+.icon-ccnb {
+fill: #fffeff;
+@include size(rem(50));
+}
+
+.my-circle {
+  @include size(rem(80));
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
+    <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+    <a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
+
+    *************************** тень для блоков  *****************************************
+.z-depth-0  none  отключает тень
+.z-depth-1
+.z-depth-2
+.z-depth-3
+.z-depth-4
+.z-depth-5
+
+*************************** костомная кнопка  *****************************************
+<button class="btn-my">кнопка</button>
+button.btn-my {
+  @include btn(){
+    color: white;
+    text-transform: uppercase;
+    max-width: rem(300);
+    &:hover {
+      color: white;
+    }
+    &.focus {
+      background-color: #4646d5 !important;
+    }
+  };
+}
+
+******************************************** Таблица *****************************************
+striped   полосатая таблица
+class="highlight" Добавьте в таблицу тег для таблицы подсветки.
+class="centered"  Добавьте в таблицу тег для выравнивания по центру всего текста в таблице
+class="responsive-table" Добавьте к тегу таблицы, чтобы сделать таблицу горизонтально прокручиваемой на меньших экранах.
+
+******************************************** cкрывание и показ элемента css эфект *****************************************

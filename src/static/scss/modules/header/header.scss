@@ -1,0 +1,62 @@
+.my-block {
+  height: 300px;
+}
+.icon-ccnb {
+fill: #fffeff;
+@include size(rem(50));
+}
+
+.my-circle {
+  @include size(rem(80));
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow-demo{
+  height: 100px;
+}
+
+/****************************** кнопка *************************************/
+button.btn-my {
+  @include btn(){
+    color: white;
+    text-transform: uppercase;
+    max-width: rem(300);
+    &:hover {
+      color: white;
+    }
+    &.focus {
+      background-color: #4646d5 !important;
+    }
+  };
+}
+/****************************** пульсирующая  кнопка *************************************/
+.pulss {
+  overflow: visible;
+  position: relative;
+}
+.pulss::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  border-radius: inherit;
+  transition: opacity .3s, transform .3s;
+  animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+  animation-name: pulse-animation;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.24, 0, 0.38, 1);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  z-index: -1;
+}
